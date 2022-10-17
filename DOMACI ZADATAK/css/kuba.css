@@ -1,0 +1,149 @@
+@media only screen and (max-width: 1920px) {
+    body {
+    /*    margin: 0;*/
+    /*    background-image: url("../img/plazaSlika.jpg");*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-attachment: fixed;*/
+    /*    background-size: cover;*/
+        font-family: Rockwell;
+    }
+
+    header {
+        background-color: #d79969;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    #homepage{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #nav {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    #nav-1 {
+        width: 25%;
+        display: flex;
+    }
+
+    #nav-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+    }
+
+    #nav-3 {
+        width: 25%;
+        display: flex;
+        justify-content: end
+    }
+
+    #nav li {
+        list-style: none;
+        margin: 0 8px;
+    }
+
+    #nav li a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+    }
+
+    #nav a:hover {
+        background-color: #ce8953;
+    }
+
+
+    #dropdown {
+        position: relative;
+
+    }
+
+    #dropdown-menu {
+        display: none;
+        position: absolute;
+        border: 1px solid;
+        border-radius: 5px;
+        width: 200px;
+        background-color: white;
+    }
+
+    .login {
+        width: 100%;
+        display: block;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    input {
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px 0;
+        display: inline-block;
+        /*align-items: end;*/
+    }
+
+    button {
+        padding: 4px 12px;
+        /*background-color: #04AA6D;*/
+    }
+
+    #ponuda {
+        width: 80%;
+        /*background-color: #04AA6D;*/
+        margin: 24px auto;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+    }
+
+    .card {
+        width: 40%;
+        border: 1px solid gray;
+        margin: 30px;
+        padding: 18px;
+        display: block;
+        border-radius: 15px;
+        box-shadow: 15px 15px 10px #333333;
+        background-color: #d3c7c7;
+
+    }
+}
+
+.slika {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    object-position: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    #nav-2 {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%
+    }
+}
+

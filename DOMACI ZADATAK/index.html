@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencija</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<header>
+    <nav id="nav">
+        <ul id="nav-1">
+            <a id="homepage" href="index.html"><h1>Exotic Travel</h1></a>
+        </ul>
+        <ul id="nav-2">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li>
+                <a id="dropdown" href="#" style="display: inline-flex">Destinacije
+                    <img src="img/icons/down-arrow.png" style="height: 20px; margin: 0 6px;">
+                </a>
+                <div id="dropdown-menu">
+                    <a href="kuba.html">Kuba</a>
+                    <a href="maldivi.html">Maldivi</a>
+                    <a href="meksiko.html">Mexico</a>
+                    <a href="zanzibar.html">Zanzibar</a>
+                </div>
+            </li>
+
+        </ul>
+        <ul id="nav-3">
+            <div>
+                <h3>Login</h3>
+                <form action="">
+                    <div class="login">
+                        <label for="brRezervacije">Broj rezervacije</label>
+                        <input type="text" name="brRezervacije" placeholder="Uneti broj rezervacije">
+
+                    </div>
+                    <div class="login">
+                        <label for="brTelefona">Broj mobilnog telefona</label>
+                        <input type="text" name="brTelefona" placeholder="Uneti broj telefona">
+                    </div>
+                    <input type="submit" id="button-submit">
+<!--                    <button class="submit">Prijava</button>-->
+                </form>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+
+<main style="">
+
+    <div id="ponuda">
+
+        <div class="card">
+            <h2 class="podnaslov">Cuba</h2>
+            <p>Kuba letovanje - Kuba je jedinstvena! U modernom svetu u kome blede granice i razlike između država i
+                kultura, Kuba se izdvaja svojom autentičnošću.
+                <br><br> <b>Cena paket aranžmana za 12 noćenja: od 2.040 EUR po osobi</b></p>
+            <a href="kuba.html">Detaljnije</a>
+        </div>
+
+        <div class="card">
+            <h2 class="podnaslov">Maldivi</h2>
+            <p>Maldivi letovanje - pravi tropski raj. Dugo vremena su Maldivi bili jedna od najbolje čuvanih tajni na
+                svetu.
+                <br><br> <b>Cena paket aranžmana za 10 noćenja: od 1.850 EUR po osobi</b></p>
+            <a href="maldivi.html">Detaljnije</a>
+        </div>
+        <div class="card">
+            <h2 class="podnaslov">Mexico</h2>
+            <p>Kankun letovanje - U Kankunu možete uživati u sportovima na vodi, golfu, u lepoti eko-parkova ili vreme
+                provoditi u luksuznim spa centrima...
+                <br><br><b>Cena paket aranžmana za 14 noćenja: 2.500 EUR po osobi</b></p>
+            <a href="meksiko.html">Detaljnije</a>
+        </div>
+        <div class="card">
+            <h2 class="podnaslov">Zanzibar</h2>
+            <p>Zanzibar putovanje - Okružen Indijskim okeanom, nedaleko od istočne obale Afrike, na samo 6 stepeni
+                severno od Ekvatora nalazi se veoma dobro skriveno i ne tako veliko ostrvo - Zanzibar... <br><br><b>Cena
+                    paket aranžmana za 14 noćenja: 2.350 EUR po osobi</b></p>
+            <a href="zanzibar.html">Detaljnije</a>
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/domaci.js"></script>
+</body>
+</html>

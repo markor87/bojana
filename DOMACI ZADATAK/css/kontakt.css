@@ -1,0 +1,110 @@
+header {
+    background-color: #d79969;
+}
+
+ul {
+    padding: 0;
+}
+
+#homepage{
+    text-decoration: none;
+    color: inherit;
+    font-family: "Lucida Handwriting";
+}
+
+#nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+}
+
+#nav-1 {
+    width: 25%;
+    display: flex;
+}
+
+#nav-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+#nav-3 {
+    width: 25%;
+    display: flex;
+    justify-content: end
+}
+
+#nav li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+#nav li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+#nav a:hover {
+    background-color: #ce8953;
+}
+
+
+#dropdown {
+    position: relative;
+
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+}
+
+.login {
+    width: 100%;
+    display: block;
+
+}
+
+#button-submit{
+    background: #87adc4;
+    color: white;
+    border-style: outset;
+    border-color: #87adc4;
+    height: 30px;
+    width: 70px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+}
+
+
+
+
+h3 {
+    margin: 0;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    display: inline-block;
+    /*align-items: end;*/
+}
+
+button {
+    padding: 4px 12px;
+    /*background-color: #04AA6D;*/
+}
