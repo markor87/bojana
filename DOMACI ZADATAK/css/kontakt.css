@@ -100,17 +100,34 @@ ul {
 
 
 
-h3 {
-    margin: 0;
-}
+/*h3 {*/
+/*    margin: 0;*/
+/*}*/
 
-input {
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px 0;
+/*input {*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    padding: 5px;*/
+/*    margin: 5px 0;*/
+/*    display: inline-block;*/
+/*    !*align-items: end;*!*/
+/*}*/
+
+label{
+    float: left;
     display: inline-block;
-    /*align-items: end;*/
+    width: 100px;
+    padding-right: 5px;
+}
+span{
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px;
+}
+input{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 button {

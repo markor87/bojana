@@ -32,20 +32,31 @@
 
         </ul>
         <ul id="nav-3">
-            <div>
-                <h3 style="margin: 0">Login</h3>
-                <form action="">
-                    <div style="width: 100%;display: block">
-                        <label for="brRezervacije">Broj rezervacije</label>
-                        <input type="text" name="brRezervacije" placeholder="Uneti broj rezervacije">
-                    </div>
-                    <div style="width: 100%;display: block">
-                        <label for="brTelefona">Broj mobilnog telefona</label>
-                        <input type="text" name="brTelefona" placeholder="Uneti broj telefona">
-                    </div>
-                    <input type="submit" id="button-submit">
-                </form>
-            </div>
+<!--            <div>-->
+<!--                <h3 style="margin: 0">Login</h3>-->
+<!--                <form action="">-->
+<!--                    <div style="width: 100%;display: block">-->
+<!--                        <label for="brRezervacije">Broj rezervacije</label>-->
+<!--                        <input type="text" name="brRezervacije" placeholder="Uneti broj rezervacije">-->
+<!--                    </div>-->
+<!--                    <div style="width: 100%;display: block">-->
+<!--                        <label for="brTelefona">Broj mobilnog telefona</label>-->
+<!--                        <input type="text" name="brTelefona" placeholder="Uneti broj telefona">-->
+<!--                    </div>-->
+<!--                    <input type="submit" id="button-submit">-->
+<!--                </form>-->
+<!--            </div>-->
+
+            <form action="" name="forma" onsubmit="validacija()" method="post">
+                <h3>Provera rezervacije</h3>
+                <label for="">Broj telefona:</label>
+                <span><input type="text" id="brTel" name="brTel"></span>
+                <br>
+                <label for="">Broj rezervacije:</label>
+                <span><input type="text" id="brRez" name="brRez"></span><br>
+                <input type="submit" id="button-submit">
+            </form>
+
         </ul>
     </nav>
 </header>
@@ -101,5 +112,6 @@
 <!--</div>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/domaci.js"></script>
+<script src="js/validacija.js"></script>
 </body>
 </html>
