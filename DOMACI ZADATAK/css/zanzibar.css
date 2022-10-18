@@ -1,10 +1,10 @@
 @media only screen and (max-width: 1920px) {
     body {
-    /*    margin: 0;*/
+        margin: 0;
     /*    background-image: url("../img/plazaSlika.jpg");*/
     /*    background-repeat: no-repeat;*/
     /*    background-attachment: fixed;*/
-    /*    background-size: cover;*/
+        background-size: cover;
         font-family: Rockwell;
     }
 
@@ -19,6 +19,7 @@
     #homepage{
         text-decoration: none;
         color: inherit;
+        font-family: "Lucida Handwriting";
     }
 
     #nav {
@@ -133,8 +134,19 @@
     width: 600px;
     object-fit: cover;
     object-position: center;
-    margin: 5px;
+    margin: 15px;
     border-radius: 5px;
+}
+
+#button-submit {
+    background: #419ed5;
+    color: white;
+    border-style: outset;
+    border-color: #87adc4;
+    height: 30px;
+    width: 70px;
+    font: bold15px arial, sans-serif;
+    text-shadow: none;
 }
 
 @media only screen and (max-width: 768px) {

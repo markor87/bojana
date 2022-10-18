@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+    /*    background-image: url("../img/plazaSlika.jpg");*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-attachment: fixed;*/
+    background-size: cover;
+    font-family: "Rockwell";
+}
+
 header {
     background-color: #d79969;
 }

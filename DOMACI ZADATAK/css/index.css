@@ -16,7 +16,7 @@
         padding: 0;
     }
 
-    #homepage{
+    #homepage {
         text-decoration: none;
         color: inherit;
         font-family: "Lucida Handwriting";
@@ -87,18 +87,20 @@
 
     }
 
-    #button-submit{
-        background: #87adc4;
+    #button-submit {
+        background: #419ed5;
         color: white;
         border-style: outset;
         border-color: #87adc4;
         height: 30px;
         width: 70px;
-        font: bold15px arial,sans-serif;
+        font: bold15px arial, sans-serif;
         text-shadow: none;
     }
 
-
+    #button-submit:hover {
+        background: #1ec6af;
+    }
 
 
     h3 {
@@ -139,11 +141,11 @@
         display: block;
         border-radius: 15px;
         box-shadow: 15px 15px 10px #333333;
-        background-color: rgb(131, 199, 217);
+        background-color: rgb(82, 187, 210);
 
     }
 
-    .card h2{
+    .card h2 {
         font-family: "Lucida Handwriting";
     }
 }
