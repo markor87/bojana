@@ -121,14 +121,20 @@ $student1 = new Student();
 $student1->setIme("Pera");
 $student2 = new Student();
 $student2->setIme("Marko");
+$student3 = new Student();
+$student3->setIme("Bojana");
 $ocena1=new Ocena();
 $ocena1->setVrednost(10);
 $ocena2=new Ocena();
 $ocena2->setVrednost(9);
+$ocena3=new Ocena();
+$ocena3->setVrednost(10);
 $predmet1=new Predmet();
 $predmet1->setIme("Programiranje");
 $predmet2=new Predmet();
 $predmet2->setIme("Fizika");
+$predmet3=new Predmet();
+$predmet3->setIme("Pravo");
 ?>
 <body>
 <table>
@@ -146,6 +152,11 @@ $predmet2->setIme("Fizika");
         <td><?php echo $student2->getIme(); ?></td>
         <td><?php echo $ocena2->getVrednost(); ?></td>
         <td><?php echo $predmet2->getIme(); ?></td>
+    </tr>
+    <tr>
+        <td><?php echo $student3->getIme(); ?></td>
+        <td><?php echo $ocena3->getVrednost(); ?></td>
+        <td><?php echo $predmet3->getIme(); ?></td>
     </tr>
 </table>
 </body>
