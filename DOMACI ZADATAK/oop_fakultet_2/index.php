@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .student-grade-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .student-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .grade {
+            font-size: 16px;
+            color: #ff0000; /* Crvena boja za ocenu */
+        }
+
+    </style>
+</head>
+<body>
+<?php
+  include 'php.php';
+?>
+
+<h1>Fakultet</h1>
+
+<!-- Prikaz imena studenta i njegove ocene za predmet -->
+<div class="student-grade-container">
+    <p class="student-name">Ime studenta: <?php echo $student->getIme(); ?></p>
+    <p class="predmet">Predmet: <?php echo $predmet->getNaziv(); ?></p>
+    <p class="grade">Ocena: <?php echo $student->getOcena(); ?></p>
+    <p><?php echo "Hello World" ?></p>
+</div>
+</body>
+</html>

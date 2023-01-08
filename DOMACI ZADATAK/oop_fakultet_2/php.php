@@ -154,4 +154,3 @@ foreach ($sortiraneOcene as $ocena) {
 }
 
 
-
