@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .student {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<?php
+  include "classes.php";
+?>
+<div class="student">
+    <h1>Ime studenta: <?php echo $student->getIme(); ?></h1>
+    <h2>Ocena za predmet: <?php echo $ocena->getVrednost(); ?></h2>
+</div>
+</body>
+</html>
