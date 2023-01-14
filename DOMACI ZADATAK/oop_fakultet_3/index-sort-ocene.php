@@ -39,15 +39,16 @@ abstract class AbstractStudent
     }
 }
 
-// trait sa metodom sortirajStudenti()
+// trait sa metodom sortirajOcena()
 trait SortTrait
 {
-    public static function sortirajStudenti($studenti)
+    public static function sortirajOcena($studenti)
     {
         usort($studenti, function ($a, $b) {
-            return $a->getIme() <=> $b->getIme();
+            return $a->getOcena()->getVrednost() <=> $b->getOcena()->getVrednost();
         });
         return $studenti;
+
     }
 }
 
@@ -107,29 +108,32 @@ class Predmet
     }
 }
 
-// funkcija koja sortira niz studenata po imenu
-function sortirajStudenti($studenti)
-{
-    usort($studenti, function ($a, $b) {
-        return $a->getIme() <=> $b->getIme();
+// funkcija koja sortira niz studenata po oceni
+function sortirajOcena($studenti) {
+    usort($studenti, function($a, $b) {
+        return $a->getOcena()->getVrednost() <=> $b->getOcena()->getVrednost();
     });
     return $studenti;
 }
 
 // kreiranje objekata i testiranje
 $student1 = new Student();
-$student1->setIme("Pera");
+$student1->setIme("Zoran");
 $student2 = new Student();
 $student2->setIme("Marko");
 $student3 = new Student();
 $student3->setIme("Bojana");
+$student4=new Student();
+$student4->setIme("Aleksandar");
 
 $ocena1=new Ocena();
-$ocena1->setVrednost(10);
+$ocena1->setVrednost(7);
 $ocena2=new Ocena();
 $ocena2->setVrednost(9);
 $ocena3=new Ocena();
-$ocena3->setVrednost(10);
+$ocena3->setVrednost(5);
+$ocena4=new Ocena();
+$ocena4->setVrednost(10);
 
 $predmet1=new Predmet();
 $predmet1->setIme("Programiranje");
@@ -137,9 +141,24 @@ $predmet2=new Predmet();
 $predmet2->setIme("Fizika");
 $predmet3=new Predmet();
 $predmet3->setIme("Pravo");
+$predmet4=new Predmet();
+$predmet4->setIme("Matematika");
+
+$studenti = array($student1,$student2,$student3,$student4);
+
+$ocene = array($ocena1,$ocena2,$ocena3,$ocena4);
+
+$predmeti = array($predmet1,$predmet2,$predmet3,$predmet4);
+
+// sortiranje niza studenata po oceni
+$studenti = sortirajOcena($studenti);
 
 ?>
-
+<!--html za sortiranje po imenu-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fakultet</title>
 <body>
 <table>
     <tr>
@@ -147,21 +166,16 @@ $predmet3->setIme("Pravo");
         <th>Ocena</th>
         <th>Predmet</th>
     </tr>
-    <tr>
-        <td><?php echo $student1->getIme(); ?></td>
-        <td><?php echo $ocena1->getVrednost(); ?></td>
-        <td><?php echo $predmet1->getIme(); ?></td>
-    </tr>
-    <tr>
-        <td><?php echo $student2->getIme(); ?></td>
-        <td><?php echo $ocena2->getVrednost(); ?></td>
-        <td><?php echo $predmet2->getIme(); ?></td>
-    </tr>
-    <tr>
-        <td><?php echo $student3->getIme(); ?></td>
-        <td><?php echo $ocena3->getVrednost(); ?></td>
-        <td><?php echo $predmet3->getIme(); ?></td>
-    </tr>
+    <?php
+    // prolazak kroz sortirani niz studenata i ispis podataka na HTML strani
+    for ($i = 0; $i < count($studenti); $i++) {
+        echo '<tr>';
+        echo '<td>'.$studenti[$i]->getIme().'</td>';
+        echo '<td>'.$ocene[$i]->getOcena()->getVrednost().'</td>';
+        echo '<td>'.$predmeti[$i]->getIme().'</td>';
+        echo '</tr>';
+    }
+    ?>
 </table>
 </body>
 </html>
